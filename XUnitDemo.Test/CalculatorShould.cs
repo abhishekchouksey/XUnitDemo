@@ -43,7 +43,7 @@ namespace XUnitDemo.Test
         [Theory]
         [InlineData(1, 2)] // AddTwoPositiveNumbers
         [InlineData(0, 2)] // AddZeroAndPositiveNumber
-        [InlineData(-5, 1)] // AddNegativeAndPositiveNumber
+        [InlineData(-6, 1)] // AddNegativeAndPositiveNumber
         public void Add(int a, int b)
         {
 
