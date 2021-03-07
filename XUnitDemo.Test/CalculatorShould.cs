@@ -40,20 +40,20 @@ namespace XUnitDemo.Test
             Assert.Equal(-4, sut.Value);
         }
 
-        //[Theory]
-        //[InlineData(1, 2)] // AddTwoPositiveNumbers
-        //[InlineData(0, 2)] // AddZeroAndPositiveNumber
-        //[InlineData(-5, 1)] // AddNegativeAndPositiveNumber
-        //public void Add(int a, int b)
-        //{
+        [Theory]
+        [InlineData(1, 2)] // AddTwoPositiveNumbers
+        [InlineData(0, 2)] // AddZeroAndPositiveNumber
+        [InlineData(-5, 1)] // AddNegativeAndPositiveNumber
+        public void Add(int a, int b)
+        {
 
-        //    var cal = new Calculator();
+            var cal = new Calculator();
 
-        //    cal.Add(a);
-        //    cal.Add(b);
+            cal.Add(a);
+            cal.Add(b);
 
-        //    Assert.Equal(a + b, cal.Value);
-        //}
+            Assert.Equal(a + b, cal.Value);
+        }
 
         // Test Data driven testing with XUnit
         [Theory]
